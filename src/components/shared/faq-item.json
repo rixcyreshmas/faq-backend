@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_faq_items",
+  "info": {
+    "displayName": "FAQ Item",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "richtext"
+    },
+    "answer": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

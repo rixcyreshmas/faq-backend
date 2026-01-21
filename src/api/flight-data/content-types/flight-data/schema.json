@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "flights_data",
+  "info": {
+    "singularName": "flight-data",
+    "pluralName": "flights-data",
+    "displayName": "flightsData"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "AIRLINE": {
+      "type": "string"
+    },
+    "DEPARTURE": {
+      "type": "string"
+    },
+    "ARRIVAL": {
+      "type": "string"
+    },
+    "PRICE": {
+      "type": "integer"
+    }
+  }
+}
