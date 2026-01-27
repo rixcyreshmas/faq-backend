@@ -1,0 +1,13 @@
+{
+  "kind": "collectionType",
+  "collectionName": "debug",
+  "info": {
+    "singularName": "debug",
+    "pluralName": "debugs",
+    "displayName": "Debug"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {}
+}
