@@ -9,5 +9,9 @@
   "options": {
     "draftAndPublish": false
   },
-  "attributes": {}
+  "attributes": {
+    "note":{
+        "type":"string"
+    } 
+  }
 }
