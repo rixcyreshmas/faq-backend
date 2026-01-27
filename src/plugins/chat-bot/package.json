@@ -1,0 +1,33 @@
+{
+  "version": "0.0.0",
+  "type": "commonjs",
+  "exports": {
+    "./package.json": "./package.json"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "strapi-plugin build"
+  },
+  "dependencies": {
+    "@strapi/design-system": "^2.0.0-rc.30",
+    "@strapi/icons": "^2.0.0-rc.30",
+    "react-intl": "^8.1.1"
+  },
+  "devDependencies": {
+    "@strapi/strapi": "^5.33.3",
+    "@strapi/sdk-plugin": "^5.4.0",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "^5.33.3"
+  },
+  "strapi": {
+    "kind": "plugin",
+    "name": "chat-bot",
+    "displayName": "🚀",
+    "description": "Plugin for chatbot",
+    "server": "./dist/strapi-server.js"
+  },
+  "name": "chat-bot",
+  "license": "MIT"
+}

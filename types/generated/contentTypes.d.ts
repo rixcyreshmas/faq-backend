@@ -524,6 +524,36 @@ export interface ApiFlightDataFlightData extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface PluginChatBotChatLog extends Struct.CollectionTypeSchema {
+  collectionName: 'chat_logs';
+  info: {
+    displayName: 'Chat Log';
+    pluralName: 'chat-logs';
+    singularName: 'chat-log';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    bot_response: Schema.Attribute.Text;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'plugin::chat-bot.chat-log'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    timestamp: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    user_query: Schema.Attribute.Text & Schema.Attribute.Required;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -1037,6 +1067,7 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::faq.faq': ApiFaqFaq;
       'api::flight-data.flight-data': ApiFlightDataFlightData;
+      'plugin::chat-bot.chat-log': PluginChatBotChatLog;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

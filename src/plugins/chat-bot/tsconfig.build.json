@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "server/**/*.ts",
+    "strapi-server.ts"
+  ],
+  "exclude": ["**/*.test.ts"],
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "dist"
+  }
+}
