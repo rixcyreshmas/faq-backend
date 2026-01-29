@@ -166,7 +166,7 @@ const vals = Object.keys(session.contextJson)
 Object.keys(session.contextJson).forEach(k => k.startsWith('enquiry_') && delete session.contextJson[k]);
 vals.slice(-10).forEach((v, i) => session.contextJson[`enquiry_${i + 1}`] = v);
     
-// FORCE update if the LLM was lazy but found new keywords
+// FORCE update if the LLM was lazy  but found new keywords
     if (
       extracted.keywords.length > 0 &&
       !extracted.updated_json.active_enquiry
