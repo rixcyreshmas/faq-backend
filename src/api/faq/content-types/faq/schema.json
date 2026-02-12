@@ -18,6 +18,9 @@
     "answer": {
       "type": "richtext",
       "required": true
+    },
+    "embedding": {
+      "type": "json"
     }
   }
 }
