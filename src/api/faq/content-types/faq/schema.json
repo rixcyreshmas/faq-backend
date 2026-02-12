@@ -22,7 +22,7 @@
     "embedding": {
       "type": "json"
     },
-    "answer": {
+    "newfield": {
       "type": "richtext",
       "required": true
     }
