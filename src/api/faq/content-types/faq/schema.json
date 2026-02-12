@@ -21,10 +21,6 @@
     },
     "embedding": {
       "type": "json"
-    },
-    "newfield": {
-      "type": "richtext",
-      "required": true
     }
   }
 }
