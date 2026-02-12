@@ -21,6 +21,10 @@
     },
     "embedding": {
       "type": "json"
+    },
+    "answer": {
+      "type": "richtext",
+      "required": true
     }
   }
 }
